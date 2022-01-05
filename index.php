@@ -12,8 +12,8 @@
 <body>
     <header>
         <form action="search.php" method="POST" id="search-form">
-            <p>Find a Recipe: </p><input name="search" type="text" placeholder="Search..." id="searchbar">
-            <button type="submit" name="submit-search" id="submit" class="searchbutton">Search</button>
+            <h2>Find a Recipe: </h2><input name="search" type="text" placeholder="Search..." id="searchbar">
+            <button type="submit" name="submit-search" id="searchbutton">Search</button>
         </form>
             <h1>My Favorite Recipes</h1>
             <button id="new-button"><a href="newrecipe.php">Submit New Recipe</a></button>
