@@ -1,3 +1,7 @@
+<?php
+    include_once 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>    
@@ -6,10 +10,10 @@
 </head>
 <body>
 <header>
-    <button><a href="index.html">Home</a></button>
+    <button><a href="index.php">Home</a></button>
     <h1>Add a New Recipe!</h1>
 </header>
-<form>
+<form action="includes/faverecipes.inc.php" method="POST">
     <div class="form-group">
         <label id="recipename-label" for="recipename" class="option">Recipe Name:</label>
         <input
@@ -42,15 +46,10 @@
     </div>
     <div class="form-group">
         <label id="comments-label" for="comments" class="option">Comments:</label>
-        <textarea
-            id="comments"
-            class="input-textarea"
-            name="comments"
-            placeholder="Enter any additional comments here...">
-            </textarea>
+        <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter any additional comments here..."></textarea>
     </div>
     <div class="form-group">
-        <input id="submit" type="button" value="Submit" class="submit-button">
+        <input id="submit" type="submit" value="Submit" name="submit" class="submit-button">
     </div>
 </form>
 </body>
