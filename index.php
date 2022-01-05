@@ -16,6 +16,7 @@
             <button type="submit" name="submit-search" id="searchbutton">Search</button>
         </form>
             <h1>My Favorite Recipes</h1>
+            <h2>CODY WAS HERE</h2>
             <button id="new-button"><a href="newrecipe.php">Submit New Recipe</a></button>
     </header>
     <section id="container">
